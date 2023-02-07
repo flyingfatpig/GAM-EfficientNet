@@ -208,14 +208,14 @@ class FusedMBConv(nn.Module):
                                           out_c,
                                           kernel_size=1,
                                           norm_layer=norm_layer,
-                                          activation_layer=nn.Identity)  # 注意没有激活函数
+                                          activation_layer=nn.Identity)
         else:
             self.project_conv = ConvBNAct(input_c,
                                           out_c,
                                           kernel_size=kernel_size,
                                           stride=stride,
                                           norm_layer=norm_layer,
-                                          activation_layer=activation_layer)  # 注意有激活函数
+                                          activation_layer=activation_layer)
 
         self.out_channels = out_c
 

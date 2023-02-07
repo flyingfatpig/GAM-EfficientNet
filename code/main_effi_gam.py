@@ -28,6 +28,7 @@ def main(img_path,weights_path,target_category):
     target_layers = [model.blocks[-1]]
 
 
+
     data_transform = transforms.Compose([transforms.ToTensor(),
                                          transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
     # load image
@@ -53,9 +54,9 @@ def main(img_path,weights_path,target_category):
                                       grayscale_cam,
                                       use_rgb=True)
 
-    plt.xticks([]) 
-    plt.yticks([]) 
-    plt.axis('off') 
+    plt.xticks([])
+    plt.yticks([])
+    plt.axis('off')
 
     plt.imshow(visualization)
     plt.savefig('D:\\1.jpg', bbox_inches='tight', dpi=450)
