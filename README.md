@@ -10,7 +10,7 @@ Description: Add GAM module to EfficientNetV2, and perform the identification of
 ## Code
 
 ```bash
-|-- GAM-EfficientNet
+|-- code
   |-- class_indices.json
   |-- grad_cam.py
   |-- main_effi_gam.py
