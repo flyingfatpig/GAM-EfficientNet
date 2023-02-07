@@ -27,17 +27,6 @@ def main(img_path,weights_path,target_category):
 
     target_layers = [model.blocks[-1]]
 
-    # model = models.vgg16(pretrained=True)
-    # target_layers = [model.features]
-
-    # model = models.resnet34(pretrained=True)
-    # target_layers = [model.layer4]
-
-    # model = models.regnet_y_800mf(pretrained=True)
-    # target_layers = [model.trunk_output]
-
-    # model = models.efficientnet_b0(pretrained=True)
-    # target_layers = [model.features]
 
     data_transform = transforms.Compose([transforms.ToTensor(),
                                          transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
@@ -64,9 +53,9 @@ def main(img_path,weights_path,target_category):
                                       grayscale_cam,
                                       use_rgb=True)
 
-    plt.xticks([])  # 去x坐标刻度
-    plt.yticks([])  # 去y坐标刻度
-    plt.axis('off')  # 去坐标轴
+    plt.xticks([]) 
+    plt.yticks([]) 
+    plt.axis('off') 
 
     plt.imshow(visualization)
     plt.savefig('D:\\1.jpg', bbox_inches='tight', dpi=450)
