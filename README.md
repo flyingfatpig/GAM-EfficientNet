@@ -14,12 +14,12 @@ Description: Add GAM module to EfficientNetV2, and perform the identification of
  	|-- class_indices.json
  	|-- grad_cam.py
  	|-- main_effi_gam.py
-    |-- model.py
-    |-- my_dataset.py
-    |-- predict.py
-    |-- test.py
-    |-- train.py
-    |-- utils.py
+  |-- model.py
+  |-- my_dataset.py
+  |-- predict.py
+  |-- test.py
+  |-- train.py
+  |-- utils.py
 ```
 
 
